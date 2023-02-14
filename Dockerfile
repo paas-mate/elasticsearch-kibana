@@ -1,6 +1,6 @@
-FROM ttbb/elasticsearch:nake AS elasticsearch
+FROM ttbb/elasticsearch:nake-7 AS elasticsearch
 
-FROM ttbb/kibana:nake
+FROM ttbb/kibana:nake-7
 
 COPY --chown=sh --from=elasticsearch /opt/elasticsearch /opt/elasticsearch
 
